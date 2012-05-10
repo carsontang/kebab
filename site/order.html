@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kebab LA</title>
+		<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="./bootstrap/css/kebab.css">
+	</head>
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+		  	<div class="container">
+		    	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		      	<span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </a>
+		      <a class="brand" href="./index.html">Kebab LA</a>
+		      <div class="nav-collapse collapse">
+		      	<ul class="nav">
+			      	<li class="">
+		       			<a href="./index.html">Home</a>
+		          </li>
+		        	<li class="active">
+		       			<a href="./order.html">Order</a>
+		          </li>
+		          <li class="">
+		          	<a href="./menu.html">Menu</a>
+		          </li>
+		          <li class="">
+		          	<a href="./hours.html">Hours</a>
+		          </li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<br />
+		<br />
+		<br />
+		<div class="container">
+			<form class="form-horizontal well" action="http://localhost:3000/orders" method="POST">
+			        <fieldset>
+			          <legend>Order Form</legend>
+			          <div class="control-group">
+			            <label class="control-label" for="input-first-name">First Name</label>
+			            <div class="controls">
+			              <input type="text" class="input-xlarge" id="input-first-name" name="order[first_name]">
+			              <!-- ><p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p> -->
+			            </div>
+			          </div>
+								<div class="control-group">
+			            <label class="control-label" for="input-last-name">Last Name</label>
+			            <div class="controls">
+			              <input type="text" class="input-xlarge" id="input-last-name" name="order[last_name]">     
+			            </div>
+			          </div>
+			          <div class="control-group">
+			            <label class="control-label" for="input-street">Street and Number</label>
+			            <div class="controls">
+			              <input type="text" class="input-xlarge" id="input-street" name="order[street_address]">
+			            </div>
+			          </div>
+			          <div class="control-group">
+			            <label class="control-label" for="input-tele">Telephone Number</label>
+			            <div class="controls">
+			              <input type="text" class="input-xlarge" id="input-tele" name="order[phone_number]">
+			            </div>
+			          </div>
+			          <div class="control-group">
+			            <label class="control-label" for="input-email">Email Address</label>
+			            <div class="controls">
+			              <input type="text" class="input-xlarge" id="input-email" name="order[email]">
+			            </div>
+			          </div>
+								<br />
+								<p id="order-form-description"> Select number of each type of kebab</p>
+			          <div class="control-group">
+			            <label class="control-label" for="select-beef">Beef</label>
+			            <div class="controls">
+			              <select id="select-beef" name="order[beef_count]">
+											<option>0</option>
+			                <option>1</option>
+			                <option>2</option>
+											<option>3</option>
+			                <option>4</option>
+			                <option>5</option>
+			              </select>
+			            </div>
+			          </div>
+			          <div class="control-group">
+			            <label class="control-label" for="select-chicken">Chicken</label>
+			            <div class="controls">
+			              <select id="select-chicken" name="order[chicken_count]">
+											<option>0</option>
+			                <option>1</option>
+			                <option>2</option>
+											<option>3</option>
+			                <option>4</option>
+			                <option>5</option>
+			              </select>
+			            </div>
+			          </div>
+								<br />
+			          <div class="control-group">
+			            <label class="control-label" for="textarea">Instructions for delivery</label>
+			            <div class="controls">
+			              <textarea class="input-xlarge" id="textarea" rows="3" name="order[delivery_instruction]"></textarea>
+			            </div>
+			          </div>
+			          <div class="form-actions">
+			            <button type="submit" class="btn btn-primary">Submit Order</button>
+			            <button type="reset" class="btn">Reset Form</button>
+			          </div>
+			        </fieldset>
+			      </form>
+		</div>
+	</body>
+</html>

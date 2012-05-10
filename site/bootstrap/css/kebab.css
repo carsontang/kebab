@@ -1,0 +1,8 @@
+#order-form-description {
+		font-weight: bold;
+	  border-bottom: 1px solid #eee;
+}
+
+#select-beef, #select-chicken {
+	width: 50px;
+}
